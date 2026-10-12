@@ -4,19 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <script defer src="api.js"></script>
     <script defer src="main.js"></script>
-    <title>CodeToTheCode Records</title>
+    <title>CodeToTheCore Records</title>
 </head>
 <body>
-    <h1>Welcome to the CodeToTheCore Music Store</h1>
-    <button id="loadRecordsBtn">Load Records</button>
-    <div id="recordsContainer"></div>
+    <nav class="site-nav">
+        <a href="index.html">Record Store</a>
+        <a href="Music.html">Core Music</a>
+        <a href="Core.html">About Core</a>
+    </nav>
 
-    <Form id="searchForm">
-        <label for="artistInput">Search for an artist:</label>
-        <input type="text" id="artistInput" required>
-        <button type="submit">Search</button>
-    </Form>
-    <div id="artistInfoContainer"></div>
+    <h1>CodeToTheCoreMusic</h1>
+
+    <div class="header">
+        <div class="logo"><img src="assets/CodeToToCore logo design1.png" alt="CodeToTheCore logo" /></div>
+        <video class="second-picture center" src="assets/CodeToTheCoreMusic.mp4" autoplay muted loop playsinline></video>
+
+        <div class="main">
+            <p>Code to the Core Music is an app designed to help you make playlists of your favorite artists and songs, plus find the tracks you desire.</p>
+        </div>
+
+        <form id="searchForm">
+            <label for="artistInput">Search for an artist:</label>
+            <br>
+            <input type="text" id="artistInput" name="artistInput" required>
+            <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="results"></div>
+
+        <div class="primary-content">
+            <div class="sidebar">
+                <details>
+                    <summary>Top Artist list</summary>
+                    <ol>
+                        <li>Nicki Minaj</li>
+                        <li>Lil Wayne</li>
+                        <li>Drake</li>
+                        <li>Future</li>
+                        <li>Biggie Smalls</li>
+                        <li>2Pac</li>
+                    </ol>
+                </details>
+                <button id="loadRecordsBtn" class="btn">Load Records</button>
+            </div>
+            <div class="main">
+                <div id="recordsContainer"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

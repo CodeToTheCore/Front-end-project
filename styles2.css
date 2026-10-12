@@ -1,0 +1,233 @@
+/* impoted fonts always is first thing we add at the beginning/the top of page before anything else. */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400;700&display=swap');
+
+        
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400;700&display=swap');
+@media(mid-width: 12px){
+
+}
+@media(max-width: 992px){
+
+}
+
+
+/* everything in the body using some Caveat fonts I selected
+in the color blue and black*/
+body {
+    font-family: "Caveat", sans-serif;
+    color: red;
+    font-size: 40px;
+}
+
+body {
+transition: background-color 0.5s ease-in-out;
+
+
+color: green;
+background-color: black;
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+}
+@media(max-width: 780px){
+body {
+    background: rgp(205,144,266);
+}
+}
+
+
+
+/* utility classes */
+/* core page css */
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate.animate--infinite {
+    animation-iteration-count: infinite;
+}
+
+.animate.animate.animate--delay-1s {
+    animation-delay: 1s;
+}
+
+.animate.animate--fast {
+    animation-duration: 0.6s;
+}
+
+.animate.animate--slow {
+    animation-duration: 0.3s;
+}
+
+
+
+
+/*Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+
+to {
+    transform: translateX(0);
+ }
+}
+
+.slideInLeft {
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+
+
+to {
+    transform: translateX(0);
+ }
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
+
+/* .slideInLeft {
+    animation: slideInLeft 1s ease-in; */
+    /* animation: slideInLeft 1s ease-in 1s both; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;  */
+   /* transform: translateX(-150px); 
+}*/
+
+/* Rotate */
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+ to {
+    transform: rotate(360deg);
+ }
+}
+.rotate {
+    animation-name: rotate;
+    animation-timing-function: linear;
+
+    transform-origin: center;
+}
+
+
+/* bounce effect*/
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+
+
+
+}
+
+.bounce {
+    animation-name: bounce;
+}
+
+
+
+
+/* Core list/item Container */
+ .container {
+    font-size: 1rem; 
+}
+li {
+    font-size: 2rem;
+}
+ul {
+    font-size: rem;
+}
+
+
+/* Core mix sample button */
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+/* adding some style to heading */
+.header {
+    background-color: red;
+    color: black;
+    padding: 1em 0;
+    width: 50%;
+    height: 30vh;
+}
+
+.header__title {
+    font-size: 10.3rem;
+    margin: 0;
+}
+
+.section__container {
+    border: 3px solid;
+
+     width: 80%;
+}
+
+
+/* my pic movement */
+ .selfie{
+    font-size: 2rem;
+    width: 1000px;
+    height: 600px;
+    /* border: 4px solid; */
+    padding: 32px 64px 100px 10px;
+    margin: 10px 40px 100px 900px;
+    position: relative;
+
+
+
+    /* box model */
+
+
+    
+ }
+
+  

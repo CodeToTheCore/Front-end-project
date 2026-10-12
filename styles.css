@@ -1,0 +1,288 @@
+
+            /* impoted fonts always is first thing we add at the beginning/the top of page before anything else. */
+            @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400;700&display=swap');
+
+        
+            @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat:wght@400;700&display=swap');
+            /* @media(mid-width: 12px){
+
+            }
+            /* @media(max-width: 992px){ }*/
+
+            /* .second-picture {
+                height: 300px;
+                width: auto;
+            } */
+
+            
+           /* everything in the body using some Caveat fonts I selected
+           in the color blue and black*/
+            body {
+                font-family: "Caveat", sans-serif;
+                color: red;
+                font-size: 40px;
+            }
+           
+            body {
+            transition: background-color 0.5s ease-in-out;
+            
+    
+            color: blue;
+            background-color: black;
+            
+            .material-symbols-outlined {
+              font-variation-settings:
+              'FILL' 0,
+              'wght' 400,
+              'GRAD' 0,
+              'opsz' 24
+            }
+        }
+        @media(max-width: 780px){
+            body {
+                background: rgp(205,144,266);
+            }
+        }
+          body {
+            /* background-color: black;
+            font-size: 3.7rem;
+            padding: 20px; 
+            border: 5px solid;
+            text-align:center; */
+            transition: all 0.7s ease-out;
+          }
+
+         .logo img {
+            /* background-color: black;
+            font-size: 3.7rem;
+            padding: 20px; 
+            border: 5px solid;
+            text-align:center; */
+            transition: all 0.7s ease-out;
+          }
+          
+          
+          main {
+            grid-column-start: 2fr;;
+            
+          }
+        
+
+        p {
+            color: green;
+            background-color: black;
+        }
+        p2 {
+            color: green;
+            background-color: rgb(21, 20, 20);
+        
+
+        }
+        /* give h1 a outter box around it.  also gives h1 its size and position on page */
+        h1 {
+            background-color: black;
+            font-size: 10.7rem;
+            padding: 20px;
+            border: 5px solid;
+            text-align:center;
+            transition: all 0.7s ease-out;
+        }
+
+        
+           
+
+
+
+          /* h1 hover effect  */
+           h1:hover {
+            box-shadow:100px ;
+            transform: scale(1.2);
+         } 
+
+         /* positions Detail menu to left of page */
+         .primary-content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+          } 
+/* These ol make grids that formats the detail drop down menu items list  */
+ol {
+    display: grid;
+    grid-template-columns: 1fr 
+    gap 5px;
+    grid-auto-rows: 100px;
+    }
+ol {
+    display: grid;
+    grid-template-columns: 1fr 
+    gap 5px;
+    grid-auto-rows: minmax(100px, auto);
+   } 
+
+
+  /* This give detail menu it's  gray sidebar feature */
+   .sidebar {
+    background: #2d2d2d;
+    color: white;
+    text-align: center;
+  }
+   
+
+
+
+/* These are here to resize the images  but are not working */
+/* .image-container {
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+    border: 5px solid #fff;
+    width: 450px;
+    height: 250px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+   .second-picture {
+    width: 100px;
+    height: 300%;
+}  */
+
+/* This is here to center main logo pic/ but in this case we want it to take up most of right of screen*/
+.center {
+    display: block;
+    margin-left: auto;
+    /* margin-right: auto; */
+    width: 50%;
+    height: 10%;
+}
+/* new images appears when hovering over image */
+.second-picture center{
+    width: 500;
+    height: 500;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 2s ease-in 1s;
+    -webkit-transition: all 2s ease-in 1s;
+    -moz-transition: all 2s ease-in 1s;
+}
+/* new images appears when hovering over image */
+.second-picture center hover {
+    background-image:url("img/CodeToTheCoreMusicProductions.mp4/.logo-hover");
+}
+
+
+
+
+/* button with hover effects */
+.button-test {
+    display: block;
+    width: 128px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: lightblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #222;
+    line-height: 60px;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.s ease-in-out;
+    -moz-transition: all 0.s ease-in-out;
+    -o-transition: all 0.s ease-in-out;
+}
+ .button-test:hover {
+    width: 170px;
+    height: 300px;
+    padding-left: 500;
+    background-color: red;
+ }
+  
+ .button-test span {
+    padding-left: 30px;
+    color: white;
+    font-weight: 900;
+ }
+
+
+
+ .btn {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: var(--clr-accent);
+    background-color: var(--clr-rgba);
+    border: 10px solid var(--clr-accent);
+    border-radius: 5px;
+
+    /* transition-duration: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 5px; */
+
+    /* transition: transform 0.3s, background-color 0.3s; */
+    transition: all 0.3s;
+ }
+
+
+.btn:hover {
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+
+
+
+
+
+
+
+
+
+/* record-card 
+{
+    transition: transform 0.3s ease-in-out;
+} */
+
+.record-card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* .light-theme {
+    background-color: #fff;
+    color: #333;
+} */
+
+/* .dark-theme {
+    background-color: #333;
+    color: #fff;
+} */
+
+#recordsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px
+}
+
+/*flex layout*/
+#recordDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* hover effect*/
+.record-card {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.record-card:hover {
+    transform: scale(1.05);
+}
