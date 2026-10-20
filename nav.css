@@ -109,3 +109,319 @@ body {
         padding: 16px;
     }
 }
+
+/* Record Store page: logo and video side by side so the search starts near the top */
+.store-page {
+    font-size: 24px;
+}
+.store-page h1 {
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    padding: 10px;
+    margin: 12px auto;
+    max-width: 1000px;
+}
+.store-page h1:hover {
+    transform: scale(1.03);
+}
+.store-page .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.store-page .hero .logo img,
+.store-page .hero video {
+    height: 170px;
+    width: auto;
+    max-width: 90vw;
+    display: block;
+}
+.store-page .main p {
+    font-size: 1.15rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 12px auto;
+    background: none;
+}
+.store-page #searchForm {
+    text-align: center;
+    margin: 8px auto 4px;
+}
+.store-page #searchForm label {
+    font-size: 1.4rem;
+}
+.store-page #searchForm input {
+    font-size: 1rem;
+    padding: 8px 10px;
+    margin: 4px 6px 0 0;
+}
+.store-page #searchForm .btn {
+    font-size: 1rem;
+    padding: 0.4em 1em;
+    border-width: 3px;
+}
+.store-page .primary-content {
+    margin-top: 16px;
+}
+.store-page .sidebar ol {
+    grid-auto-rows: auto;
+    font-size: 1.2rem;
+}
+.store-page .sidebar .btn {
+    font-size: 1rem;
+    padding: 0.4em 1em;
+    border-width: 3px;
+    margin: 8px 0;
+}
+@media (max-width: 700px) {
+    .store-page .hero .logo img,
+    .store-page .hero video {
+        height: 130px;
+    }
+    .store-page .primary-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About Core page: title and buttons sized to fit, photo back in view */
+.about-page header.header {
+    width: auto;
+    height: auto;
+    max-width: 900px;
+    margin: 12px auto;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.about-page .section__container {
+    width: 100%;
+}
+.about-page .header__title {
+    font-size: clamp(1.8rem, 5vw, 3.4rem);
+    text-align: center;
+    padding: 8px;
+}
+.about-page header .btn {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: 2px solid white;
+}
+.about-page header .header {
+    background: none;
+    width: 100%;
+    height: auto;
+    padding: 8px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.about-page .selfie {
+    width: min(300px, 70vw);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 12px;
+}
+.about-page section {
+    text-align: center;
+    overflow: hidden;
+    padding: 0 12px;
+}
+.about-page section h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin: 6px 0;
+}
+.about-page section h2 {
+    font-size: clamp(2rem, 6vw, 3.6rem);
+    margin: 6px 0;
+}
+.about-page section h3 {
+    font-size: clamp(1.4rem, 4vw, 2.2rem);
+    margin: 6px 0;
+}
+.about-page audio {
+    display: block;
+    margin: 12px auto;
+}
+.about-page .container {
+    text-align: center;
+}
+.about-page .container ul {
+    list-style: none;
+    padding: 0;
+}
+.about-page .container li {
+    font-size: 1.3rem;
+    margin: 6px 0;
+}
+.about-page .container .btn {
+    font-size: 1rem;
+    padding: 0.5em 1.2em;
+}
+
+/* ---------- record covers, songs, album page, and playlist ---------- */
+.record-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+.record-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.record-card p { margin: 0; background: none; }
+.card-title {
+    font-size: 1.15rem;
+    color: white;
+    line-height: 1.2;
+}
+.card-artist {
+    font-size: 1rem;
+    color: lightblue;
+}
+.card-link {
+    margin-top: auto;
+    color: lightblue;
+    font-size: 1rem;
+}
+.record-card audio {
+    width: 100%;
+    height: 34px;
+    margin-top: 4px;
+}
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+.playlist-add {
+    background: lightblue;
+    color: #111;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font: 600 0.9rem Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.playlist-add:hover { background: white; }
+.records-status { font-size: 1.2rem; color: lightblue; margin: 8px 0; }
+#recordsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+}
+
+/* My Playlist on the Record Store page */
+#playlist {
+    margin-top: 20px;
+    background: #111;
+    border: 3px solid lightblue;
+    border-radius: 8px;
+    padding: 14px;
+}
+.playlist-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.playlist-head h2 { margin: 0; font-size: 1.6rem; color: white; }
+.play-all {
+    font-size: 1rem;
+    padding: 0.4em 1em;
+    border-width: 3px;
+    cursor: pointer;
+}
+#playlist .empty { font-size: 1.1rem; color: #bbb; background: none; }
+.playlist-list { list-style: none; padding: 0; margin: 10px 0 0; display: block; }
+.playlist-row {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 1px solid #333;
+}
+.playlist-row img { width: 56px; height: 56px; border-radius: 4px; }
+.playlist-info audio { width: 100%; max-width: 320px; height: 32px; margin-top: 4px; }
+.remove {
+    background: none;
+    border: 0;
+    color: #bbb;
+    text-decoration: underline;
+    cursor: pointer;
+    font: 0.9rem Arial, Helvetica, sans-serif;
+}
+.remove:hover { color: #ff7a7a; }
+
+/* Album page (record.html): big cover, then every song */
+.record-page { font-size: 20px; }
+.record-page #recordDetails {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.album-header {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+.album-header img {
+    width: min(280px, 100%);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.album-info { flex: 1; min-width: 240px; }
+.record-page h1.album-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    background: none;
+}
+.record-page h1.album-title:hover { transform: none; }
+.album-artist { font-size: 1.5rem; color: lightblue; margin: 4px 0; background: none; }
+.album-meta { font-size: 1.1rem; color: #bbb; margin: 0 0 12px; background: none; }
+.back-link { display: inline-block; margin-left: 12px; color: lightblue; font-size: 1.1rem; }
+.preview-note { font-size: 1rem; color: #bbb; background: none; margin: 0 0 6px; }
+.tracklist { list-style: none; padding: 0; margin: 0; display: block; }
+.track-row {
+    display: grid;
+    grid-template-columns: 32px 1fr 52px 260px auto;
+    gap: 12px;
+    align-items: center;
+    padding: 8px 6px;
+    border-top: 1px solid #333;
+}
+.track-row:hover, .track-row.highlight { background: #1a1a1a; }
+.track-row.highlight { outline: 2px solid lightblue; }
+.track-number, .track-time { color: #bbb; font-size: 1rem; }
+.track-row audio { width: 100%; height: 32px; }
+@media (max-width: 760px) {
+    .track-row {
+        grid-template-columns: 28px 1fr auto;
+    }
+    .track-row audio {
+        grid-column: 2 / 4;
+    }
+    .track-row .playlist-add { grid-column: 3; grid-row: 1; }
+    .track-time { display: none; }
+}
+
+#playlist, .playlist-info { text-align: left; }

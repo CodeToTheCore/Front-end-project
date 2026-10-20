@@ -6,18 +6,21 @@ Welcome to Code To The Core Music Store, a music-themed website built to showcas
 
 ## What it does
 
-- **Search any artist.** Results come from the iTunes Search API and show as record cards with cover art.
-- **Load Records.** Pulls one album for each artist in the Top Artist list.
-- **Record details.** Click "View details" on any card to see the artist, album, genre, year, and a 30-second preview.
+- **Search any artist.** Results come from the iTunes Search API, with album covers and a 30-second preview of every song.
+- **Load Records.** Shows a full album cover for each artist in the Top Artist list. Covers appear as each one loads, so one slow request can't hold up the rest.
+- **Album pages.** Click any record to see its big cover and **every song on the album**, each with a preview player and "Play all."
+- **My Playlist.** Tap "+ Playlist" on any song. The playlist is saved in your browser and plays straight through, one song after another.
 - **Core Music.** A player page for my own tracks as CoreTheProducer.
 - **About Core.** My producer page, with animated headings and the studio tools I use.
+
+iTunes only provides 30-second previews, not full songs; that's how Apple licenses its API. Only one preview plays at a time.
 
 ## Pages
 
 | Page | File |
 | --- | --- |
 | Record Store (home) | `index.html` |
-| Record Details | `record.html` |
+| Album (every song) | `record.html?album=<id>` |
 | Core Music | `Music.html` |
 | About Core | `Core.html` |
 
