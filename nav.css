@@ -59,3 +59,53 @@ h1 {
 body {
     flex-direction: column;
 }
+
+/* Music page: smaller headings so the song list starts near the top */
+.music-page header {
+    text-align: center;
+    padding: 16px 12px 8px;
+}
+.music-page header h1 {
+    font-size: clamp(1.4rem, 3.5vw, 2.4rem);
+    margin: 0;
+}
+.music-page header h2 {
+    font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+    margin: 4px 0 0;
+}
+.music-page .audio {
+    min-height: auto;
+    align-items: flex-start;
+    padding: 12px 0 40px;
+}
+.music-page .music {
+    padding: 20px 24px;
+}
+.music-page .music > p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.music-page .music h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin: 2px 0 8px;
+}
+.music-page .track {
+    margin-top: 8px;
+}
+.music-page .track img {
+    width: 48px;
+}
+.music-page .track p {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    margin: 0 0 2px;
+}
+.music-page .track audio {
+    height: 36px;
+    max-width: 100%;
+}
+@media (max-width: 600px) {
+    .music-page .music {
+        border-radius: 24px;
+        padding: 16px;
+    }
+}
