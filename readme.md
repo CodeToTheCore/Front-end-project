@@ -2,7 +2,7 @@
 
 Welcome to Code To The Core Music Store, a music-themed website built to showcase my front-end skills. This was my front-end portfolio project in the Pursuit Fellowship (November 2023).
 
-**Live site:** https://codetothecore.github.io/Front-end-project/
+**Live site:** https://core-music-store.vercel.app
 
 ## What it does
 
